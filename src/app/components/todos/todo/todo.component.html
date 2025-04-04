@@ -1,0 +1,13 @@
+
+    <div class="todos-list">
+        <mat-card >
+            {{i+1}}. {{todo.todo}}- Created at: {{todo.date | date:'shortTime'}}
+          
+            <button  (click)="deletTodo()" mat-raised-button>
+                Task Done
+                <mat-icon>delete</mat-icon>
+               </button>    
+        </mat-card>
+       
+    </div>
+

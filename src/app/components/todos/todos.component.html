@@ -1,0 +1,16 @@
+<div class="header">
+<h2>Welcome {{username}}</h2>
+</div>
+<div class="container">
+    <mat-card>
+      <form class="form" (submit)="createTodo(todoInput.value); todoInput.value=''">
+        <mat-form-field class="todo-input-field">
+            <input type='text' [(ngModel)]="inp" name="todo" placeholder="Enter your todo plan here" matInput #todoInput>
+          </mat-form-field>
+        <button type="submit"  mat-raised-button class="add-todo-button"> Add TODO </button>
+      </form>
+    </mat-card>
+    
+    <app-todo *ngFor="let todo of todos; let i=index"  [todo]="todo" [i]="i" (deleteTodoEvent)="deletTodo($event)"></app-todo>
+</div>
+ 

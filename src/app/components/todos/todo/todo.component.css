@@ -1,0 +1,36 @@
+
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.todos-list mat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    padding: 2vh 2vw;
+}
+
+.todos-list mat-card button {
+    margin-top: 1vh; 
+}
+@media (min-width: 768px){
+    
+    .todos-list mat-card {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .todo-input-field {
+        flex-grow: 0.8;
+        padding-top: 2vh;
+        padding-inline: 5vh;
+    }
+    .todos-list mat-card button {
+        margin-top: 0;
+    }
+}

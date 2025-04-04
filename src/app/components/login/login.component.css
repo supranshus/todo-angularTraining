@@ -1,0 +1,47 @@
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 2vw;
+
+}
+.form-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 400px;
+    height: 70vh;
+    margin: 2vh 0;
+ 
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+ 
+}
+
+
+.form button{
+    padding: 0;
+    margin: 0;
+    
+}
+h2{
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) { /* Tablet and larger */
+    .form-cont {
+        width: 60%;
+    }
+    h2{
+        padding-bottom: 8vh;
+    }
+}

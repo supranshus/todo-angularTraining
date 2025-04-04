@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    flex: 1 1 auto;
+}
+.btn{
+    padding: 0.6rem;
+}

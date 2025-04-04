@@ -1,0 +1,28 @@
+<main>
+    <mat-card class="form-cont">
+        <div>
+            <form [formGroup]="login"   class="form" (submit)="doLogin()">
+                <h2>Login to use TODO App!!</h2>
+              
+                    <mat-form-field>
+                        <mat-label>Username</mat-label>
+                        <input type="text" name="username" id="username"   matInput formControlName="username">
+                        
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input type="password" name="password" id="password"  matInput formControlName="password">
+                        
+                    </mat-form-field>
+                    <button   type="submit" mat-raised-button>
+                        <mat-icon  >login</mat-icon>
+                    </button>
+    
+                
+            </form>
+        </div>
+    </mat-card>
+</main>
+
+

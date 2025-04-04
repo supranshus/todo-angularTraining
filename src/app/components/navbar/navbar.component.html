@@ -1,0 +1,26 @@
+
+    <mat-toolbar class="nav">
+        <button (click)="logout()"  mat-icon-button >
+            <mat-icon>home</mat-icon>
+          </button>
+        <div>
+            <span >Todo App </span>
+            <mat-icon>notes</mat-icon>
+        </div>
+        
+        
+        <span class="logo"></span>
+        <div >
+            <button routerLink="about"  mat-raised-button class="example-icon favorite-icon" >
+                <mat-icon>info</mat-icon> About Us
+             </button>
+             <span class="btn"></span>
+             <button routerLink="/login" *ngIf="!loggedIn" mat-raised-button class="example-icon" >
+                <mat-icon>login</mat-icon> Login
+             </button>
+             <button  *ngIf="loggedIn" (click)="logout()" mat-raised-button class="example-icon" >
+                <mat-icon>logout</mat-icon> Logout {{username}}
+             </button>
+        </div>
+        
+      </mat-toolbar>
